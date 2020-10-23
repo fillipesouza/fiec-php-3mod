@@ -2,7 +2,7 @@
 
 <div class="cadastro">
       <div class="container">
-        <form class="form">
+        <form class="form" action="utils/adiciona_usuario.php" method="POST">
           <div class="header">
             <h1>Cadastro</h1>
           </div>
@@ -12,11 +12,11 @@
               type="text"
               class="form-control"
               placeholder="Nome"
-              id="name"
-              name="name"
+              id="nome"
+              name="nome"
               tabindex="1"
             />
-            <label for="name" class="form-label">Nome</label>
+            <label for="nome" class="form-label">Nome</label>
           </div>
           <div class="form-group">
             <input
@@ -54,7 +54,7 @@
             </div>
             <div class="form-group">
             <input
-              type="text"
+              type="number"
               class="form-control"
               placeholder="Nº"
               id="numero"
@@ -75,7 +75,7 @@
             <label for="complemento" class="form-label">Complemento</label>
             </div>
           <div class="botao">
-            <button><a href="">CADASTRAR</a></button>
+            <button type="submit">CADASTRAR</button>
           </div>
         </form>
       </div>
